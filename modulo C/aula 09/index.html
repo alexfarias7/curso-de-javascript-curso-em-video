@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro passos com Dom</title>
+</head>
+<style>
+    body{
+        background: rgb(55, 126, 155);
+        color: white;
+        font: normal 18 pt arial;
+    }
+    
+</style>
+
+
+<body>
+
+    <h1>Iniciando estudos com Dom</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Usando <STRong>DOM</STRong> em java script</p>
+    <div id="msg">Clique em mim</div>
+
+    <script>
+        //window.document.write('olá mundo<br>')
+        //window.document.write(document.charset)
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        //var d = window.document.getElementById('msg')
+        //window.document.write(`Está escrito assim: ${p1.innerText}`)
+        //p1.style.color= 'red'
+        //corpo.style.background= "black"
+        //document.write(p1.innerHTML)
+        //window.alert(p1.innerText)
+        //d.style.background='green'
+        //d.innerText='estou aguardando..'
+        //window.document.getElementById('msg').innerText='olá'
+      
+        //var d = window.document.getElementsByName('msg')[0]
+        //d.innerText='Olá!'
+        
+        var d = window.document.querySelector('div#msg')
+        d.style.color='blue'
+        d.style.background = 'red'
+    </script>
+    
+</body>
+</html>

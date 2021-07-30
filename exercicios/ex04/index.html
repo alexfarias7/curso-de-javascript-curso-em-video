@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 04</title>
+    <style>
+        body{
+            font: normal 14pt arial;
+            background:rgb(43, 120, 156);
+            color: rgba(255, 255, 255, 0.925);
+        }
+        button{
+            font: normal 14pt arial;
+            padding: 30px;
+            margin-left: 10px;
+            border-radius: 8px;
+            border:solid 2px black ;
+        }
+        button:hover{
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>Trabalhando com Dados v2.0</h1>
+    <button onclick="clicar()">
+        Clique aqui para começar
+    </button>
+
+    <section id="res">
+        <p>
+            Aqui vai aparecer o resulltado...
+        </p>
+    </section>
+
+    <script>
+        function clicar(){
+            let nome = window.prompt('Qual é o seu nome?')
+            let resulltado = window.document.getElementById('res')
+
+            resulltado.innerHTML=`<p>Olá <strong>${nome}</strong>. É  um  grande prazer te conhecer &#x1F44B</p>`
+        }
+    </script>
+    
+    
+</body>
+</html>

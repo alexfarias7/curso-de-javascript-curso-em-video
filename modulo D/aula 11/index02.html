@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Nacionalidade</title>
+</head>
+
+<body>
+    <h1>Verificando a Nacionalidade</h1>
+    <p>
+        Qual país você nasceu?
+        <input type="text" name="txtpais" id="pais">
+        <input type="button" value="Verificar" onclick="checarpais()">
+    </p>
+
+
+    <div id="res">
+    </div>
+
+    <script>
+        function checarpais(){
+            var p = document.querySelector('input#pais')
+            var pais = p.value
+            var resultado = document.querySelector('div#res')
+            resultado.innerHTML =`<p>Vivendo em ${pais}.</p>`
+            if (pais == "Brasil"){
+                resultado.innerHTML += `Você é brasileiro`
+            }else{
+                resultado.innerHTML += `Você é estrangeiro`
+            }
+
+
+        }
+        
+
+    </script>
+</body>
+</html>

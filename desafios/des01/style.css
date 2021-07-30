@@ -1,0 +1,12 @@
+h1{
+    font: normal 40pt arial;
+    margin-left: 100px;
+}
+#btn01{
+    margin-left: 100px;
+}
+button{
+    padding: 30px;
+    font-size: 20pt;
+    margin: 5px;
+}

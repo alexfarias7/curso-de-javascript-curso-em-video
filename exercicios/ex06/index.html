@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execício 06</title>
+    <style>
+        body{
+            color: white;
+            background:rgb(43, 120, 156);
+            font: normal 14pt Arial;
+        }
+        button{
+            font: normal 14pt arial;
+            padding: 30px;
+            margin-left: 10px;
+            border: solid 2px black;
+            border-radius: 8px;
+        }
+        button:hover{
+            color: white;
+            background: rgba(0, 0, 0, 0.5);
+            transition:1s;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Somando dois números</h1>
+    <button onclick="cliacar()">
+        Iniciar a soma
+    </button>
+
+    <section id="res">
+        <P>O resultado vai aparecer aqui...</P>
+    </section>
+
+    <script>
+        function cliacar(){
+            //Outro modo de fazer
+            /*let n1 = window.prompt('digite um número: ')
+            let n2 = window.prompt('digite outro número: ')
+            let num1= Number(n1)
+            let num2 = Number(n2)*/
+
+            let num1 = Number(window.prompt('digite um número: '))
+            let num2 = Number(window.prompt('digite outro número: '))
+            let soma = num1+num2
+            let resulltado = window.document.getElementById('res')
+            resulltado.innerHTML =`<p> A soma de <mark>${num1}</mark> com <mark>${num2}</mark> é igual a <strong>${soma}</strong>.</p>`
+
+
+        }
+    </script>
+</body>
+</html>

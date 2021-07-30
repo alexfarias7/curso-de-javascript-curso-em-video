@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+body{
+    background:rgb(43, 120, 156);
+    color: white;
+    font: normal 16pt arial;
+}
+
+h1{
+    font-family: cursive, Caveat;
+    margin-left: 50px;
+    font-size: 40pt;
+    margin-bottom: 20px;
+}
+
+button{
+    padding: 40px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    border: solid 2px black;
+    border-radius: 8px;
+    font-size:20pt;
+}
+
+button:hover{
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    transition: 0.5s;
+}
+section{
+    margin-left: 50px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 26</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Contagem "inteligente"</h1>
+    <p id="txtp">Use qualquer valor nas caixas, simule contagens crescentes e regressivas. Use também valores negativos.
+    </p>
+
+    <section id="formulario">
+        <form action="#" method="GET">
+            <p>
+                <label for="fn1">
+                    valor inicial:
+                </label>
+                <input type="number" name="txtn1" id="txtn1" placeholder="Ínicio da contagem">
+            </p>
+
+            <p>
+                <label for="fn1">Valor final :</label>
+                <input type="number" name="txtn2" id="txtn2" placeholder="Fim da contagem">
+
+                <input type="submit" value="contar" formaction="javascript:contar()">
+            </p>
+
+
+        </form>
+
+    </section>
+
+    <section id="res">
+           <p>Preencha os dados acima e aperte o botão.</p>
+    </section>
+
+    <script src="contagem.js"></script>
+    
+</body>
+</html>
